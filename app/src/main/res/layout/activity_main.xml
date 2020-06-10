@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_Aceptar"
+        android:layout_width="354dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:text="REGISTRAR"
+        app:layout_constraintEnd_toEndOf="@+id/btnLogin"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnLogin"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+
+    <EditText
+        android:id="@+id/txtDni"
+        android:layout_width="354dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Dni"
+        app:layout_constraintTop_toBottomOf="@+id/txtLastname"
+        tools:layout_editor_absoluteX="28dp" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="354dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="Correo"
+        app:layout_constraintEnd_toEndOf="@+id/txtDni"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtDni"
+        app:layout_constraintTop_toBottomOf="@+id/txtDni" />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="354dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text="Contraseña"
+        app:layout_constraintEnd_toEndOf="@+id/txtEmail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtEmail"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
+
+    <EditText
+        android:id="@+id/txtCommission"
+        android:layout_width="354dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Comision"
+        app:layout_constraintEnd_toEndOf="@+id/txtPassword"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/txtPassword"
+        app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
+
+    <EditText
+        android:id="@+id/txtGroup"
+        android:layout_width="354dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Grupo"
+        app:layout_constraintEnd_toEndOf="@+id/txtCommission"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="@+id/txtCommission"
+        app:layout_constraintTop_toBottomOf="@+id/txtCommission" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="354dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:text="INGRESAR"
+        app:layout_constraintEnd_toEndOf="@+id/txtGroup"
+        app:layout_constraintTop_toBottomOf="@+id/txtGroup" />
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="354dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Nombre"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="28dp" />
+
+    <EditText
+        android:id="@+id/txtLastname"
+        android:layout_width="354dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Apellido"
+        app:layout_constraintEnd_toEndOf="@+id/txtName"
+        app:layout_constraintStart_toStartOf="@+id/txtName"
+        app:layout_constraintTop_toBottomOf="@+id/txtName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
